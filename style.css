@@ -1,0 +1,143 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0a0a0a; /* Deep stealth black */
+    color: #ffffff;
+    font-family: 'Orbitron', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Header & Logo styling */
+header {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.8), transparent);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    font-style: italic;
+}
+
+.logo span {
+    font-weight: 400;
+    color: #888; /* Makes 'OPTICS' look cleaner and contrasted */
+}
+
+/* Hero Section */
+.hero {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* This loads your image and adds a 60% black tint over it so the white text pops */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('E_Trail.jpg');
+    background-size: cover;
+    background-position: center;
+    border-bottom: 1px solid #222;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 32px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+/* Call to Action Button */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 2px;
+    border-radius: 2px;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #cccccc;
+    transform: scale(1.05);
+}
+
+/* Gallery Section */
+.gallery-container {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-container h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 20px;
+    letter-spacing: 4px;
+    color: #444;
+}
+
+/* The Grid System */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.photo-card {
+    background-color: #111;
+    border: 1px solid #222;
+    overflow: hidden;
+    border-radius: 4px;
+    aspect-ratio: 3 / 2;
+}
+
+.photo-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+/* Zoom effect on hover */
+.photo-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Footer styling */
+footer {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #050505;
+    border-top: 1px solid #111;
+}
+
+footer p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.contact-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
